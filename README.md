@@ -1,5 +1,7 @@
-# angular-7-registration-login-example
+Login page
 
-Angular 7 User Registration and Login Example with Webpack 4
 
-Full tutorial with example available at http://jasonwatmore.com/post/2018/10/29/angular-7-user-registration-and-login-example-tutorial
+git clone https://github.com/marosmosek/SinglePage.git
+cd SinglePage
+npm install
+npm start
