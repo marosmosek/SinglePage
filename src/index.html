@@ -1,0 +1,298 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <base href="/">
+  <title>FANSPLAYERS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!--begin::Base Styles -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <style>
+        /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body{
+    background: #F6F8F7;; 
+    overflow: hidden;
+}
+.MyHeader{
+    background: #FFFFFF!important;
+    box-shadow: 0px 1px 0px rgba(36, 51, 39, 0.02), 0px 1px 5px rgba(36, 51, 39, 0.13)!important; 
+    height: 60px!important;
+}
+.MyHeaderContainer{
+    position: fixed;
+    left: 0;
+}
+.MyHeaderBtnText{
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;/* identical to box height, or 14px */
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #243327;
+    padding-left: .7rem;
+}
+.MyNavbarLabel{
+    position: fixed!important;
+}
+.MyHeaderText{
+    position: fixed;
+    left: 45vw;
+    font-family: Work Sans;
+    font-style: Bold;
+    font-weight: 1000;
+    font-size: 19px;
+    line-height: 100%;/* identical to box height, or 14px */
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #243327;
+}
+        a { cursor: pointer }
+
+        .ComponentBox{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 7.22%;
+}
+
+.ComponentBox .MainBox{
+    width: 33%;
+    height: 72.22vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 14px rgba(0, 0, 0, 0.0726902);
+    border-radius: 6px;
+}
+.ComponentBox .MainBox .Top{
+    width: 100%;
+    height: 7.77vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: none;
+}
+
+.ComponentBox .MainBox .Top .Item{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #F1F3F2;
+    box-shadow: inset 3px -5px 4px rgba(0, 0, 0, 0.05);
+    border-top: 4px solid #E7E9E7;
+    color: #939F95;
+    cursor: hand;
+}
+.ComponentBox .MainBox .Top .SelectedItem{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #FFFFFF; 
+    border-top: 4px solid #2AB446;
+    color: #243327;
+    box-shadow: none;
+    transition: background-color 0.3s ease-in-out;
+}
+.ComponentBox .MainBox .Top .ItemText{
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;/* identical to box height, or 127% */
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+.TermsBox > a{
+    color: #2AB446;
+}
+        .Middle .FormBox{
+    width: 31.52vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column!important;
+    padding-top: 7%;
+}
+  .Middle .FormBox .input-group{
+    width: 24.58vw;
+    height: 100%;
+}
+  .Middle .FormBox .input-group .form-control{
+    height: 6vh;
+}
+
+.input-group-text{
+    background:#FFFFFF;
+    border-right: none
+}
+.form-control{
+    border-left: none
+}
+.rightbtn{
+    border-right: 1px solid #ced4da; 
+    background: #F3F6F4;
+    opacity: 0.76;
+}
+
+  .Middle .FormBox .input-group .mybtn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2AB446;
+    border-radius: 2px;
+    box-shadow: 0px 1px 0px #2F9343;
+}
+  .Middle .FormBox .input-group .mybtn .btnText{
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 28px;/* or 165% */
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    letter-spacing: 0.2px;
+
+    color: #FFFFFF;
+
+}
+
+  .Middle .FormBox .input-group .dissable{
+    opacity: .6
+}
+
+  .Middle .FormBox .input-group .BreakerWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3vh;
+}
+  .Middle .FormBox .input-group .BreakerWrapper .BreakerLineBox {
+    width: 7vw;
+    height: 1px;
+    background: #E7E9E7;
+}
+  .Middle .FormBox .input-group .BreakerWrapper .BreakerWord {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    line-height: 16px;/* identical to box height, or 133% */
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    letter-spacing: 1px;
+
+    color: #939F95;
+
+}
+
+  .Middle .FormBox .input-group .mybtnSocial{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: #F6F8F7;
+    border: 1px solid #E9ECE9;
+    border-radius: 2px;
+    padding-left: 0;
+}
+
+  .Middle .FormBox .input-group .mybtnSocial .btnSocialText{
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 28px;/* or 165% */
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    letter-spacing: 0.2px;
+
+    color: #243327;
+    padding-left: 1rem
+}
+
+.form-control:focus{
+  border: 1px solid #ced4da;
+  border-left: none;
+  box-shadow: none;
+}
+.Myshadow{
+  -webkit-box-shadow: 0px 0px 8px -3px rgba(153,153,153,1);
+  -moz-box-shadow: 0px 0px 8px -3px rgba(153,153,153,1);
+  box-shadow: 0px 0px 8px -3px rgba(153,153,153,1);
+  transition: box-shadow 0.1s ease-in-out;
+}
+
+.ErrBox{
+  padding:.2rem 1rem;
+  border: 1px solid #FF463A;
+  border-radius: 3px;
+  background:#FF463A;
+  color: white;
+  width: 100%;  
+  font-size: 0.8rem
+}
+.ErrBox a{
+  color: white; 
+  text-decoration: none
+}
+
+.errorborder{
+  border: solid 2px #FF463A;
+  border-radius: 3px;
+}
+    </style>
+    <!--end::Base Styles --> 
+</head>
+<body>
+        <header>
+          <div class="MyHeader navbar navbar-dark bg-dark shadow-sm">
+            <div class="MyHeaderContainer container d-flex ">
+              <a href="#" class="MyNavbarLabel navbar-brand d-flex align-items-center">
+                <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.4815 8H3.51849" stroke="#243327" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M7.74071 12.6667L3.22528 8.00001L7.74071 3.33334" stroke="#243327" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <div class="MyHeaderBtnText">Back to homepage</div>
+              </a>
+            </div>
+            <div class="MyHeaderText">FANSPLAYERS</div>
+          </div>
+        </header>
+        <app style="display:flex;justify-content: center;align-items: center;height: 100vh;">
+                <img *ngIf="loading" class="pl-3" style="width:3vw" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+            
+        </app>
+        <!--begin::Base Scripts -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!--end::Base Scripts -->
+      </body>
+      </html>

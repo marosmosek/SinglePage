@@ -1,0 +1,20 @@
+﻿<div class="ComponentBox">
+        <div class="MainBox">
+          <div class="row Top">
+            <a routerLink="/register" (click)="this.Tab1 = false;this.Tab2 = true;" [ngClass]="{'SelectedItem':Tab2,'col-6':true,'Item':true}" style="text-decoration:none" >
+              <div class="ItemText">
+                Create account
+              </div>
+            </a>
+            <a routerLink="/login" (click)="this.Tab1 = true;this.Tab2 = false;" [ngClass]="{'SelectedItem':Tab1,'col-6':true,'Item':true}" style="text-decoration:none">
+              <div class="ItemText">
+                Log in
+              </div>
+            </a>
+          </div>
+          <router-outlet></router-outlet>
+        </div>
+        <div class="TermsBox mt-3">
+          By signing up you agree to our <a href="#"> Terms of Service </a> and <a href="#"> Privacy Policy </a>
+        </div>
+      </div>
